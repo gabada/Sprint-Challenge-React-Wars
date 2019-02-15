@@ -1,0 +1,23 @@
+.list {
+    margin-bottom: 50px;
+}
+
+.list h2{
+    font-size: 25px;
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+}
+
+.list-item {
+    list-style-type: none;
+    font-size: 17px;
+    display:inline-block;
+    color: lightblue;
+    background:black;
+    min-width:1px;
+}
+
+img {
+    margin-top: 30px;
+    width: 15%;
+}
