@@ -1,6 +1,9 @@
 import React from 'react';
 
+import NextPage from './NextPage';
+
 import './StarWars.css';
+
 
 const StarWars = props => {
     return (
@@ -32,6 +35,7 @@ const StarWars = props => {
                     <img src="https://www.ibm.com/thought-leadership/scienceandstarwars/images/share-lightsaber-blue.jpg" alt="lightsaber"/>
                 </ul>
             ))}
+            <NextPage next={props.next} gotonextpage={props.gotonextpage}/>
         </div>
     );
 };

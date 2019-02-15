@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: ''
     };
   }
 
@@ -24,12 +25,19 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          next: data.next
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+
+  GoToNextPage() {
+    <a href={this.state.next}></a>
+  }
 
   render() {
     return (
@@ -38,6 +46,8 @@ class App extends Component {
         <StarWars
           key={this.state.starwarsChars.name}
           starwarsChars={this.state.starwarsChars}
+          next={this.state.next}
+          gotonextpage={this.GoToNextPage}
         />
       </div>
     );
