@@ -24,13 +24,35 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [X] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
 
-- [ ] Describe state.
+React JS is a JavaScript library built by Facebook, it is used for building user interfaces and front-end applications. The problem it tries to solve is how to deal with complex state without sacrificing performance with DOM operations/manipulation. One example is the to do list we built. React makes it possible to add an item to the todo list but ONLY render that item, instead of re-rendering the entire page or list and adding the new item in. React is highly scalable so when you have a site like Facebook only rendering the changes to the DOM help a lot with performance.
 
-- [ ] Describe props.
+
+
+- [X] What does it mean to _think_ in react?
+
+
+
+Thinking in React means to think in terms of components and where state should live. So you look at a page and separate it into components and decide which should be the parent, children, and grandchildren.
+
+
+
+- [X] Describe state.
+
+
+
+State is an object that determines how the component renders and behaves. State is  what allows us to create components that are dynamic and interactive. You can pass and change state between components. State can be changed and is usually changed by an action like clicking a button or typing into a form.
+
+
+
+- [X] Describe props.
+
+
+Props are short for properties. They are values that are passed to React components, they along with state determine how the component renders and behaves. They are equivalent to parameters in pure Javascript functions. They allow us to pass custom data to React components. Props are immutable (Can not be changed)
+
+
 
 ## Project Set Up
 
